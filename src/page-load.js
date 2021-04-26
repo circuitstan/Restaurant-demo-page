@@ -18,6 +18,7 @@ const pageload = () => {
 
     const photo = document.createElement('img')
     photo.src = dinner
+    photo.className = "logo"
     content.appendChild(photo)
 }
 

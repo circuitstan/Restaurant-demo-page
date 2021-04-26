@@ -1,5 +1,22 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
 .menuitem {
     border: 1px solid black;
     width: max-content;
     padding: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.title1 {
+    font-size: 22px;
+    
+}
+
+.title2 {
+    font-size: 16px;
 }
