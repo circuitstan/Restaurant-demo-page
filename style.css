@@ -2,14 +2,55 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+.logo {
+    display: block;
+    margin: auto;
+}
 
+.container {
+    position: relative;
+}
+
+#title {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin: 50px;
+}
 
 .menuitem {
-    border: 1px solid black;
     width: max-content;
     padding: 5px;
-    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
     display: inline-block;
+    cursor: pointer;
+    background-color: #b7f4ff;
+
+
+
+}
+
+.menutabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.menudiv, .contactdiv {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.checked {
+    width: max-content;
+    padding: 5px;
+    margin: 0px;
+    display: inline-block;
+    cursor: pointer;
+    border-bottom: 2px solid #b7f4ff;
+    
 }
 
 .title1 {
