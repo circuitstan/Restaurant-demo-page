@@ -2,19 +2,27 @@ import dinner from "../img/dinner.png"
 
 const pageload = () => {
     const content = document.getElementById('content')
+    content.className = "container"
     const title = document.createElement('p')
-    title.innerText= "The Restaurant"
+    title.innerText= "Luigi's Pizza"
+    title.id = "title"
     content.appendChild(title)
 
-    const menu = document.createElement('p')
+    const menutabs = document.createElement('div')
+    menutabs.className = "menutabs"
+    content.appendChild(menutabs)
+
+    const menu = document.createElement('label')
     menu.innerText = "Menu"
     menu.className = "menuitem"
-    content.appendChild(menu)
+    menu.id = "menu"
+    menutabs.appendChild(menu)
 
-    const contact = document.createElement('p')
+    const contact = document.createElement('label')
     contact.innerText = "Contact"
     contact.className = "menuitem"
-    content.appendChild(contact)
+    contact.id = "contact"
+    menutabs.appendChild(contact)
 
     const photo = document.createElement('img')
     photo.src = dinner

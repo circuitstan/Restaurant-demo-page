@@ -1,10 +1,14 @@
 const menuload = () => {
     const content = document.getElementById('content')
 
+    const menudiv = document.createElement('div')
+    content.appendChild(menudiv)
+    menudiv.className = "menudiv"
+
     const antipasti = document.createElement('p')
     antipasti.innerText = "ANTIPASTI"
     antipasti.className = "title1"
-    content.appendChild(antipasti)
+    menudiv.appendChild(antipasti)
 
     const antipasto = document.createElement('p')
     antipasto.innerText = "ANTIPASTO 10€"
@@ -19,7 +23,7 @@ const menuload = () => {
     const pizza = document.createElement('p')
     pizza.innerText = "PIZZA"
     pizza.className = "title1"
-    content.appendChild(pizza)
+    menudiv.appendChild(pizza)
 
     const marinara = document.createElement('p')
     marinara.innerText = "MARINARA 7€"
